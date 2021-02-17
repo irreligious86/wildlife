@@ -272,6 +272,32 @@ body {
   }
 }
 @media only screen and (max-width: 420px) {
+  .navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .navbar .link-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+  }
+  .navbar .link-box a {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 60px;
+    color: #F7F7F7;
+  }
+
   .content-mail-service em {
     font-size: clamp(24px, 10vw, 48px);
     line-height: clamp(36px, 14vw, 72px);
