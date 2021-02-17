@@ -1,0 +1,345 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background: #CCCCCC;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: min(1440px, 100%);
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+.inner {
+  width: min(1200px, 100%);
+  padding: 20px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.home-link {
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  &-picture {
+  }
+
+  &-title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 60px;
+    text-transform: uppercase;
+    color: #F7F7F7;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+
+  .link-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+
+    flex-wrap: wrap;
+
+    a {
+      text-decoration: none;
+      text-transform: capitalize;
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 60px;
+      color: #F7F7F7;
+    }
+  }
+
+}
+
+.header {
+  min-height: 779px;
+  background-image: url("../img/pretty-fox-bg.png");
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+
+  &-navbar {
+    .link-box {
+      width: min(500px, 100%);
+
+      a {
+        padding: 8px 12px;
+      }
+    }
+  }
+
+  &-donate {
+    width: min(300px, 100%);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    gap: 35px;
+
+    &-title {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 72px;
+      letter-spacing: 2px;
+      text-transform: capitalize;
+      color: #CD6326;
+    }
+
+    &-content {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 27px;
+      color: #F7F7F7;
+    }
+
+    &-button {
+      width: 160px;
+      height: 60px;
+      background: #CD6326;
+      border-radius: 5px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 27px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #F7F7F7;
+    }
+  }
+
+}
+
+
+.content {
+  min-height: 1368px;
+
+  &-inner {
+    min-height: 120vh;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  &-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+
+    .page-title {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 48px;
+      line-height: 72px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #333333;
+    }
+
+    .page-description {
+      font-family: Open Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #666666;
+    }
+  }
+}
+
+.slider {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+
+  .slide {
+    object-fit: cover;
+    width: 300px;
+    height: 360px;
+    margin: 2px;
+    background-position: center;
+  }
+
+  .slide-1 {
+    background-image: url("../img/deer.jpg");
+  }
+
+  .slide-2 {
+    background-image: url("../img/squirrel.jpg");
+  }
+
+  .slide-3 {
+    background-image: url("../img/bird.jpg");
+  }
+}
+
+.content-mail-service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 35px;
+
+  em {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 48px;
+    line-height: 72px;
+    text-align: center;
+    color: #333333;
+  }
+
+  .email-sendbox {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+    > * {
+      height: 60px;
+      margin: 10px 0;
+    }
+
+    .input-send-email {
+      width: clamp(300px, 35vw, 700px);
+      opacity: 0.5;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 27px;
+      display: flex;
+      align-items: center;
+      color: #666666;
+    }
+
+    .button-send-email {
+      width: min(120px, 50%);
+      background: #CD6326;
+      border: 1px solid #CD6326;
+      border-radius: 0px 5px 5px 0px;
+
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 23px;
+      line-height: 27px;
+      text-align: center;
+      text-transform: capitalize;
+      color: #F7F7F7;
+    }
+  }
+}
+
+.footer {
+  min-height: 360px;
+  background-image: url("../img/nature-footer-bg.jpg");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &-navbar {
+    display: flex;
+
+    .logo {
+    }
+
+    .link-box {
+      width: min(400px, 100%);
+
+      a {
+        padding: 6px;
+      }
+    }
+
+    .networks {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 25px;
+    }
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .footer-navbar {
+    justify-content: center;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+  .content-mail-service {
+    em {
+      font-size: clamp(24px, 10vw, 48px);
+      line-height: clamp(36px, 14vw, 72px);
+    }
+
+    .email-sendbox {
+      flex-wrap: wrap;
+
+      .input, .button {
+        width: 90vw;
+      }
+    }
+  }
+
+
+}
+
+@media only screen and (max-width: 360px) {
+
+
+}
+
+@media only screen and (max-width: 280px) {
+
+
+}
