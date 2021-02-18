@@ -1,3 +1,8 @@
+@import "normalization";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
 body {
   box-sizing: border-box;
   margin: 0;
@@ -26,6 +31,11 @@ body {
 
 .home-link {
   text-decoration: none;
+
+  :hover, :focus {
+    color: #beff25;
+    transition: color 300ms;
+  }
 }
 
 .logo {
@@ -74,13 +84,24 @@ body {
       line-height: 60px;
       color: #F7F7F7;
     }
+
+    a:hover, a:focus {
+      background-color: rgba(120, 170, 200, .3);
+      color: #beff25;
+      transition: all 300ms;
+    }
+
+    img {
+      width: 22px;
+      height: 22px;
+    }
   }
 
 }
 
 .header {
   min-height: 779px;
-  background-image: url("../img/pretty-fox-bg.png");
+  background-image: url("../img/pretty-fox-bg.jpg");
   background-position: center;
   display: flex;
   flex-direction: column;
@@ -194,6 +215,11 @@ body {
   align-items: center;
   align-content: center;
 
+  .control {
+    width: 35px;
+    height: 40px;
+  }
+
   .slide {
     object-fit: cover;
     width: 300px;
@@ -222,7 +248,7 @@ body {
   align-items: center;
   gap: 35px;
 
-  em {
+  span {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -303,6 +329,17 @@ body {
       flex-wrap: wrap;
       justify-content: space-around;
       gap: 25px;
+
+      img {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+
+        &:hover, &:focus {
+          box-shadow: 0 0 15px 4px #e7f1ae;
+          transition: all 200ms;
+        }
+      }
     }
   }
 }
@@ -324,7 +361,7 @@ body {
     gap: 8px;
 
     .link-box {
-      display: flex ;
+      display: flex;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
