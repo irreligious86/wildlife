@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Wildlife</title>
     <link rel="stylesheet" href="./css/style.css">
@@ -10,114 +10,135 @@
 <body>
 <!--WRAPPER-->
 <div class="wrapper">
-    <!--HEADER-->
-    <header class="header">
-        <div class="inner header-inner">
-            <div class="navbar header-navbar">
-                <a class="home-link" href="#" title="Home page">
-                    <div class="logo">
-                        <div class="logo-picture">
-                            <img src="./img/path0.svg" alt="LOGO">
-                        </div>
-                        <div class="logo-title">
-                            <em>
-                                wildlife
-                            </em>
-                        </div>
-                    </div>
+    <div class="fox-background">
+        <!--HEADER-->
+        <header class="header">
+            <div class="inner inner-header">
+                <a class="logo" href="#" title="Home page">
+                    <img class="logo-img" src="./img/path0.svg" alt="LOGO">
+                    <h1 class="logo-title">wildlife</h1>
                 </a>
-                <div class="link-box">
-                    <a href="/" class="header-nav-link" title="Description for link">
-                        blog
-                    </a>
-                    <a href="/" class="header-nav-link" title="Description for link">
-                        contacts
-                    </a>
-                    <a href="/" class="header-nav-link" title="Description for link">
-                        <img src="./img/finder.svg" alt="find">
-                    </a>
-                    <a href="/" class="header-nav-link" title="Description for link">
-                        sign in
-                    </a>
+                <nav class="navigation header-navigation">
+                    <ul>
+                        <li><a href="#" title="Description for link" class="">
+                            blog
+                        </a></li>
+                        <li><a href="#" title="Description for link" class="">
+                            contacts
+                        </a></li>
+                        <li><a href="#" title="Description for link" class="">
+                            <img src="./img/finder.svg" alt="find">
+                        </a></li>
+                        <li>
+                            <button type="button" title="Description for link" class="authorization">sign in</button>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+        </header>
+        <!--HEADER-->
+
+        <!--Survival-->
+        <section class="survival">
+            <div class="inner inner-survival">
+                <div class="survival-box">
+                    <h1 class="survival-title">survival</h1>
+                    <p class="survival-content">
+                        What this means is that we exist to help protect our environment and do in numbers of ways. You
+                        can
+                        save the planet by donation.
+                    </p>
+                    <button class="button survival-button">donate</button>
                 </div>
+
             </div>
-            <div class="header-donate">
-                <h1 class="header-donate-title">survival</h1>
-                <p class="header-donate-content">
-                    What this means is that we exist to help protect our environment and do in numbers of ways. You can
-                    save the planet by donation.
-                </p>
-                <button class="button header-donate-button">donate</button>
-            </div>
-        </div>
-    </header>
-    <!--HEADER-->
-    <!--CONTENT-->
-    <section class="content">
-        <div class="inner content-inner">
-            <div class="content-title">
-                <span class="page-title">
-                    latest articles
+        </section>
+        <!--Survival-->
+    </div>
+
+    <!--Latest articles-->
+    <section class="articles">
+        <div class="inner inner-articles">
+
+                <span class="articles-title">
+                    Latest articles
                 </span>
-                <span class="page-description">
+            <span class="articles-description">
                     Breaking news from the wild
                 </span>
-            </div>
+
             <div class="slider">
                 <img src="./img/left.svg" alt="left" class="control control-left">
-                <div class="slide slide-1"></div>
-                <div class="slide slide-2"></div>
-                <div class="slide slide-3"></div>
-                <img src="./img/right.svg" alt="right" class="control control-right">
-            </div>
-            <div class="content-mail-service">
-                <span class="span">
-                    Get notified about new amazing articles
-                </span>
-                <div class="email-sendbox">
-                    <input class="input input-send-email" type="email" placeholder="Email">
-                    <button class="button button-send-email">send</button>
+                <div class="slide slide-1">
+                    <img src="./img/" alt="">
                 </div>
+                <div class="slide slide-2">
+                    <img src="./img/" alt="">
+                </div>
+                <div class="slide slide-3">
+                    <img src="./img/" alt="">
+                </div>
+                <img src="./img/right.svg" alt="right" class="control control-right">
             </div>
         </div>
     </section>
-    <!--CONTENT-->
+    <!--Latest articles-->
+
+    <!--Get notified-->
+    <section class="notified">
+        <div class="inner inner-notified">
+                    <span class="notified-title">
+                    Get notified about new amazing articles
+                </span>
+            <form action="" class="email-box">
+                <input class="input input-email" type="email" placeholder="Email">
+                <input class="button button-email" type="submit" value="send">
+            </form>
+        </div>
+    </section>
+    <!--Get notified-->
+
     <!--FOOTER-->
     <footer class="footer">
-        <div class="inner footer-inner">
-            <div class="navbar footer-navbar">
-                <a class="home-link" href="#" title="Home page">
-                    <div class="logo">
-                        <div class="logo-picture">
-                            <img src="./img/path0.svg" alt="LOGO">
-                        </div>
-                        <div class="logo-title">
-                            <em>
-                                wildlife
-                            </em>
-                        </div>
-                    </div>
-                </a>
-                <div class="link-box">
+        <div class="inner inner-footer">
+            <a class="logo" href="#" title="Home page">
+                <img class="logo-img" src="./img/path0.svg" alt="LOGO">
+                <h1 class="logo-title">wildlife</h1>
+            </a>
+            <ul class="navigation footer-navigation">
+                <li>
                     <a href="#" title="Description for link">Articles</a>
+                </li>
+                <li>
                     <a href="#" title="Description for link">About us</a>
+                </li>
+                <li>
                     <a href="#" title="Description for link">Learn more</a>
-                </div>
-                <div class="networks">
-                    <a href="#" title="Visit us on FaceBook">
-                        <img src="./img/vector-fb.svg" alt="FB" >
+                </li>
+            </ul>
+            <ul class="networks">
+                <li>
+                    <a class="networks-fb" href="#" title="FaceBook">
+
                     </a>
-                    <a href="#" title="Visit us on Instagram">
-                        <img src="./img/vector-ins.svg" alt="Ins">
+                </li>
+                <li>
+                    <a class="networks-in" href="#" title="Instagram">
+
                     </a>
-                    <a href="#" title="Visit us on Pinterest">
-                        <img src="./img/vector-pin.svg" alt="Pin">
+                </li>
+                <li>
+                    <a class="networks-pi" href="#" title="Pinterest">
+
                     </a>
-                    <a href="#" title="Visit us on Telegramm">
-                        <img src="./img/vector-tg.svg" alt="Tg">
+                </li>
+                <li>
+                    <a class="networks-yt" href="#" title="Youtube">
+
                     </a>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     </footer>
     <!--FOOTER-->
