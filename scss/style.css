@@ -798,8 +798,33 @@ body {
     align-items: center;
   }
 
+  .survival {
+    display: flex;
+    align-items: center;
+    align-content: center;
+  }
+  .survival-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .survival-title {
+    margin: 0 auto;
+  }
+  .survival-content {
+    margin: 0 auto;
+    text-align: justify;
+  }
   .survival-button {
-    width: 90vw;
+    margin: 0 auto;
+    width: 70vw;
+  }
+
+  .slider-wrapper {
+    width: 100%;
+  }
+
+  .slider-wrapper .control {
+    display: none;
   }
 
   .notified .email-box {
@@ -809,6 +834,14 @@ body {
   }
   .notified .email-box .input-email, .notified .email-box .button-email {
     width: 90vw;
+  }
+}
+@media only screen and (max-width: 320px) {
+  .slider .slide {
+    width: 100%;
+  }
+  .slider .slide img {
+    width: 100%;
   }
 }
 

@@ -219,15 +219,15 @@ body {
     height: 40px;
   }
 
-    #control-left:hover {
-      transform: translate(-5px) scale(1.2, 1.2);
-      transition: all 150ms;
-    }
+  #control-left:hover {
+    transform: translate(-5px) scale(1.2, 1.2);
+    transition: all 150ms;
+  }
 
-    #control-right:hover {
-      transform: translate(5px) scale(1.2, 1.2);
-      transition: all 150ms;
-    }
+  #control-right:hover {
+    transform: translate(5px) scale(1.2, 1.2);
+    transition: all 150ms;
+  }
 
   .slide {
     object-fit: cover;
@@ -447,14 +447,15 @@ body {
 
   &-navigation {
     width: min(600px, 100%);
-ul {
-display: flex;
-  justify-content: space-around;
-  //gap: 6px;
-  a {
-    padding: 6px;
-  }
-}
+
+    ul {
+      display: flex;
+      justify-content: space-around;
+      //gap: 6px;
+      a {
+        padding: 6px;
+      }
+    }
   }
 
   .networks {
@@ -535,10 +536,40 @@ display: flex;
   }
 
   .survival {
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+    &-box {
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    &-title {
+      margin: 0 auto;
+    }
+
+    &-content {
+      margin: 0 auto;
+      text-align: justify;
+    }
+
     &-button {
-      width: 90vw;
+      margin: 0 auto;
+      width: 70vw;
     }
   }
+
+  .slider-wrapper {
+    width: 100%;
+  }
+
+  .slider-wrapper {
+    .control {
+      display: none;
+    }
+  }
+
   .notified {
     //padding-top: 235px;
     //padding-bottom: 221px;
@@ -555,5 +586,10 @@ display: flex;
 }
 
 @media only screen and (max-width: 320px) {
-
+  .slider .slide {
+    width: 100%;
+    img {
+      width: 100%;
+    }
+  }
 }
