@@ -367,7 +367,7 @@ body {
 }
 
 .inner {
-  width: min(1200px, 100%);
+  width: min(1200px, 95%);
   margin: 0 auto;
   display: flex;
 }
@@ -433,7 +433,6 @@ body {
   align-items: center;
   align-content: center;
   flex-wrap: nowrap;
-  gap: 6px;
 }
 .navigation img {
   width: 22px;
@@ -508,6 +507,7 @@ body {
   justify-content: space-between;
   align-items: center;
   align-content: center;
+  margin: 3px;
 }
 .slider .control {
   width: 35px;
@@ -525,8 +525,39 @@ body {
   object-fit: cover;
   width: 300px;
   height: 360px;
-  margin: 2px;
   background-position: center;
+  position: relative;
+}
+.slider .slide-title {
+  display: block;
+  position: absolute;
+  top: 74%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 10;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 36px;
+  text-align: center;
+  color: #F7F7F7;
+}
+.slider .slide-description {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  z-index: 10;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 27px;
+  text-align: center;
+  color: #F7F7F7;
 }
 .slider .slide-1 {
   background-image: url("../img/deer.jpg");
@@ -543,7 +574,7 @@ body {
   margin-bottom: 70px;
 }
 .header-navigation {
-  width: min(490px, 100%);
+  width: clamp(450px, 35vw, 500px);
 }
 .header-navigation a, .header-navigation button {
   padding: 4px 20px;
@@ -667,6 +698,7 @@ body {
 }
 .footer-navigation {
   width: min(600px, 100%);
+  gap: 6px;
 }
 .footer-navigation a {
   padding: 6px;
@@ -704,40 +736,47 @@ body {
   transition: all 200ms;
 }
 
-@media only screen and (max-width: 420px) {
-  .navigation {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 8px;
+@media only screen and (max-width: 768px) {
+  .header-navigation {
+    width: 100vw;
   }
-  .navigation .link-box {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    align-content: flex-start;
-  }
-  .navigation .link-box a {
-    text-decoration: none;
-    text-transform: capitalize;
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 23px;
-    line-height: 60px;
-    color: #F7F7F7;
+  .header-navigation a {
+    padding: 4px;
   }
 
-  .content-mail-service em {
-    font-size: clamp(24px, 10vw, 48px);
-    line-height: clamp(36px, 14vw, 72px);
+  .footer-navigation {
+    width: 100vw;
   }
-  .content-mail-service .email-sendbox {
-    flex-wrap: wrap;
+  .footer-navigation a {
+    padding: 4px;
   }
-  .content-mail-service .email-sendbox .input, .content-mail-service .email-sendbox .button {
+
+  .survival-title, .survival-content {
+    text-shadow: 0 0 5px #000000;
+  }
+
+  .notified {
+    padding-top: min(235px, 24vw + 8vh);
+    padding-bottom: min(221px, 24vw + 8vh);
+  }
+}
+@media only screen and (max-width: 430px) {
+  .navigation ul {
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .survival-button {
+    width: 90vw;
+  }
+
+  .notified .email-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .notified .email-box .input-email, .notified .email-box .button-email {
     width: 90vw;
   }
 }
