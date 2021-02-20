@@ -69,35 +69,44 @@
                 </span>
 
             <div class="slider">
-                <img src="./img/left.svg" alt="left" class="control control-left">
-                <div class="slide slide-1">
-                    <img src="./img/deer.jpg" alt="cover">
-                    <span class="slide-title">
-Deer
+                <div class="slider-wrapper">
+                    <img src="./img/left.svg" alt="left" id="control-left" class="control">
+                    <div class="slider-inner">
+                        <div class="slide slide-1">
+                            <img src="./img/deer.jpg" alt="cover">
+                            <span class="slide-title">
+                        Deer
                     </span>
-                    <span class="slide-description">
-Naturalist investigation
+                            <span class="slide-description">
+                        Naturalist investigation
                     </span>
+                        </div>
+                        <div class="slide slide-2 hidden">
+                            <img src="./img/squirrel.jpg" alt="cover">
+                            <span class="slide-title">
+                        Squirrel
+                    </span>
+                            <span class="slide-description">
+                        Kamikaze squirrels
+                    </span>
+                        </div>
+                        <div class="slide slide-3 hidden">
+                            <img src="./img/bird.jpg" alt="cover">
+                            <span class="slide-title">
+                        Bird
+                    </span>
+                            <span class="slide-description">
+                        Birds Fight club
+                    </span>
+                        </div>
+                    </div>
+                    <img src="./img/right.svg" alt="right" id="control-right" class="control">
                 </div>
-                <div class="slide slide-2">
-                    <img src="./img/squirrel.jpg" alt="cover">
-                    <span class="slide-title">
-Squirrel
-                    </span>
-                    <span class="slide-description">
-Kamikaze squirrels
-                    </span>
+                <div class="dot-bar">
+                    <div class="dot-bar-item dot-bar-item__1 dot-active"></div>
+                    <div class="dot-bar-item dot-bar-item__2"></div>
+                    <div class="dot-bar-item dot-bar-item__3"></div>
                 </div>
-                <div class="slide slide-3">
-                    <img src="./img/bird.jpg" alt="cover">
-                    <span class="slide-title">
-Bird
-                    </span>
-                    <span class="slide-description">
-Birds Fight club
-                    </span>
-                </div>
-                <img src="./img/right.svg" alt="right" class="control control-right">
             </div>
         </div>
     </section>
@@ -164,5 +173,6 @@ Birds Fight club
     <!--FOOTER-->
 </div>
 <!--WRAPPER-->
+<script src="./js/main.js"></script>
 </body>
 </html>
