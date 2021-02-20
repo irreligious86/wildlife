@@ -595,6 +595,9 @@ body {
   border: 1px solid darkgreen;
   box-shadow: 0 0 12px -2px black;
 }
+.slider .dot-bar .dot-active {
+  background-color: #fff336;
+}
 
 .header {
   padding: 18px 5px 18px 5px;
