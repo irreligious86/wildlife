@@ -639,6 +639,7 @@ body {
   width: 160px;
   height: 60px;
   border-radius: 5px;
+  border-style: none;
 }
 
 .articles {
@@ -711,6 +712,7 @@ body {
 .notified .email-box .button-email {
   width: min(120px, 50%);
   border-radius: 0px 5px 5px 0px;
+  border-style: none;
 }
 
 .footer {
