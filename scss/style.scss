@@ -220,6 +220,12 @@ body {
     background-position: center;
     position: relative;
 
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
     &-title {
       display: block;
       position: absolute;
@@ -227,7 +233,6 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       white-space: nowrap;
-
       z-index: 10;
 
       font-family: Open Sans;
@@ -245,7 +250,6 @@ body {
       left: 50%;
       transform: translate(-50%, -50%);
       white-space: nowrap;
-
       z-index: 10;
 
       font-family: Open Sans;
@@ -256,18 +260,6 @@ body {
       text-align: center;
       color: #F7F7F7;
     }
-  }
-
-  .slide-1 {
-    background-image: url("../img/deer.jpg");
-  }
-
-  .slide-2 {
-    background-image: url("../img/squirrel.jpg");
-  }
-
-  .slide-3 {
-    background-image: url("../img/bird.jpg");
   }
 }
 
@@ -442,15 +434,15 @@ body {
       background-image: url("../img/vector-fb.svg");
     }
 
-    .networks-in {
+    .networks-ins {
       background-image: url("../img/vector-ins.svg");
     }
 
-    &.networks-pi {
+    .networks-pin {
       background-image: url("../img/vector-pin.svg");
     }
 
-    &.networks-yt {
+    .networks-yt {
       background-image: url("../img/youtube.svg");
     }
 
@@ -524,10 +516,8 @@ body {
       }
     }
   }
-
 }
 
 @media only screen and (max-width: 320px) {
-
 
 }

@@ -528,6 +528,11 @@ body {
   background-position: center;
   position: relative;
 }
+.slider .slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .slider .slide-title {
   display: block;
   position: absolute;
@@ -558,15 +563,6 @@ body {
   line-height: 27px;
   text-align: center;
   color: #F7F7F7;
-}
-.slider .slide-1 {
-  background-image: url("../img/deer.jpg");
-}
-.slider .slide-2 {
-  background-image: url("../img/squirrel.jpg");
-}
-.slider .slide-3 {
-  background-image: url("../img/bird.jpg");
 }
 
 .header {
@@ -714,13 +710,13 @@ body {
 .footer .networks .networks-fb {
   background-image: url("../img/vector-fb.svg");
 }
-.footer .networks .networks-in {
+.footer .networks .networks-ins {
   background-image: url("../img/vector-ins.svg");
 }
-.footer .networks.networks-pi {
+.footer .networks .networks-pin {
   background-image: url("../img/vector-pin.svg");
 }
-.footer .networks.networks-yt {
+.footer .networks .networks-yt {
   background-image: url("../img/youtube.svg");
 }
 .footer .networks a {
