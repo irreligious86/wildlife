@@ -594,12 +594,14 @@ body {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: #bfbdbd;
+  background-color: #a7a7a7;
   border: 1px solid darkgreen;
+  border-left: 1px solid #7fe3b7;
+  border-top: 1px solid #7fe3b7;
   box-shadow: 0 0 12px -2px black;
 }
 .slider .dot-bar .dot-active {
-  background-color: #fff336;
+  background-color: #fff305;
 }
 
 .header {
