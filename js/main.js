@@ -47,6 +47,12 @@ const nextSlide = () => {
     }
 };
 
+dots.forEach((item, indexDot) => {
+    item.addEventListener('click', () => {
+        index = indexDot;
+        prepareCurrentSlide(index);
+    });
+});
 
 prev.addEventListener('click', prevSlide);
 next.addEventListener('click', nextSlide);

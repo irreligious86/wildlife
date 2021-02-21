@@ -582,10 +582,13 @@ body {
   color: #F7F7F7;
 }
 .slider .dot-bar {
+  min-width: 50%;
   display: flex;
   flex-direction: row;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
   gap: 15px;
+  height: 80px;
 }
 .slider .dot-bar-item {
   width: 18px;
@@ -671,7 +674,7 @@ body {
 }
 
 .notified {
-  padding-top: 205px;
+  padding-top: 145px;
   padding-bottom: 221px;
 }
 .notified .notified-title {
@@ -827,9 +830,19 @@ body {
   .slider-wrapper {
     width: 100%;
   }
-
   .slider-wrapper .control {
     display: none;
+  }
+  .slider .dot-bar {
+    min-width: 100%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 15px;
+    height: 40px;
+  }
+  .slider .dot-bar-item {
+    width: 24px;
+    height: 24px;
   }
 
   .notified .email-box {
